@@ -17,7 +17,6 @@ chardet
 Click
 cloudpickle
 conda
-conda-package-handling
 cryptography
 cycler
 Cython
