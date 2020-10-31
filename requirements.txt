@@ -49,7 +49,6 @@ jsonschema
 jupyter-client
 jupyter-console
 jupyter-core
-jupyter-logging
 jupyterhub
 jupyterlab
 jupyterlab-server
