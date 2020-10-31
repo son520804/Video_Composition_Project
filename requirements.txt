@@ -9,6 +9,7 @@ jupyterhub
 jupyterlab
 jupyterlab-server
 matplotlib
+nose
 numpy
 pandas
 pymc3
