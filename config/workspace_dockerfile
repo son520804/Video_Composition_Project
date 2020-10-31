@@ -28,8 +28,8 @@ RUN jupyter nbextension enable username --system
 
 # 
 # Remove these two lines when you use Binderhub
-COPY /home/etc_composition/config/extensions/tree.json /usr/local/etc/jupyter/nbconfig/
-COPY /home/etc_composition/config/extensions/notebook.json /usr/local/etc/jupyter/nbconfig/
+#COPY /home/etc_composition/config/extensions/tree.json /usr/local/etc/jupyter/nbconfig/
+#COPY /home/etc_composition/config/extensions/notebook.json /usr/local/etc/jupyter/nbconfig/
 
 
 # Needed to show HTML pages
