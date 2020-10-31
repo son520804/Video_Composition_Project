@@ -1,0 +1,9 @@
+The repository is in a public location online (e.g., on GitHub or BitBucket)
+
+The repository does not require any personal or sensitive information (such as passwords)
+
+The repository has configuration files that specify its environment (see below for an example)
+
+The repository contains content designed for people to read.
+
+An environment configuration file: environment.yml is a standard file that specifies an Anaconda environment.

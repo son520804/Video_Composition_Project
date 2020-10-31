@@ -1,0 +1,27 @@
+#uploadingFilesGif {
+    background: url('loading.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.textInput {
+    width: 300px;
+}
+
+.fileLabel {
+    float: left;
+}
+
+#envLink {
+    width: 100%;
+}
+
+.fileSpan {
+    display: block;
+    overflow: hidden;
+    padding: 0 4px 0 6px
+}

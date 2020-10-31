@@ -1,0 +1,45 @@
+FROM 984027468541.dkr.ecr.us-east-1.amazonaws.com/mads-notebook:latest
+
+# Run any root commands here
+USER root
+
+# Unix Installs
+RUN apt-get update
+
+# Upgrade Conda
+
+
+# Set additional services to start on notebook start
+
+
+WORKDIR ./etc_composition/config/extensions
+RUN jupyter nbextension install . --system
+RUN jupyter nbextension enable jupyter_authoring --system
+RUN jupyter nbextension enable playback --system
+RUN jupyter nbextension enable wrap_comments --system
+RUN jupyter nbextension enable control --system
+RUN jupyter nbextension enable getsolutions --system
+RUN jupyter nbextension enable submit --system
+RUN jupyter nbextension enable submitfunction --system
+RUN jupyter nbextension enable timer --system
+RUN jupyter nbextension enable timersubmit --system
+RUN jupyter nbextension enable url --system
+RUN jupyter nbextension enable username --system
+
+# 
+# Remove these two lines when you use Binderhub
+COPY /home/etc_composition/config/extensions/tree.json /usr/local/etc/jupyter/nbconfig/
+COPY /home/etc_composition/config/extensions/notebook.json /usr/local/etc/jupyter/nbconfig/
+
+
+# Needed to show HTML pages
+RUN conda install jupyter-server-proxy --yes
+
+# Run any NB_USER commands here
+WORKDIR /home/jovyan
+USER $NB_USER
+
+
+# Install required packages
+COPY requirements.txt /tmp/requirements.txt 
+RUN conda install --file /tmp/requirements.txt

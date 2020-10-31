@@ -1,0 +1,4 @@
+config:
+  BinderHub:
+    use_registry: true
+    image_prefix: son520804

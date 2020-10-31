@@ -1,0 +1,12 @@
+{
+  "load_extensions": {
+    "control": true,
+    "getsolutions": true, 
+    "submitattempt": true,
+    "submit": true,
+    "timer" : true,
+    "timersubmit": true,  
+    "url": true,
+    "username": true
+  }
+}

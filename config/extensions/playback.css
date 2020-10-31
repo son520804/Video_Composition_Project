@@ -1,0 +1,54 @@
+#pbControls{
+    /*position: fixed;*/
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.playBtn{
+    text-align: center;
+}
+
+#myProgress {
+    width: 80%;
+    background-color: grey;
+    margin-top: 5px;
+}
+
+#myBar {
+    width: 0%;
+    height: 10px;
+    background-color: green;
+}
+
+.showProgress {
+    overflow: auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#progressDiv {
+    text-align: center;
+}
+
+.floatLeft{
+    float: left
+}
+
+.progressText {
+    text-align: center;
+    width: 10%
+}
+
+#videoDiv {
+    display: none;
+    text-align: center;
+}
+
+.video {
+    visibility: hidden;
+    width: 80%;
+    max-width: 500px;
+}
